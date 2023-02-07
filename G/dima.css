@@ -1,0 +1,56 @@
+
+body {
+ font-size: small;
+ font-family: Verdana, Helvetica, Arial, sans-serif;
+ background-color: #e88710;
+ margin-left: 10%;
+ margin-right: 10%;
+ border: 2px dotted #e88710;
+ padding: 10px 10px 10px 10px;
+ line-height: 1.6em; //200%, .5em  20px; - вариант //Здесь мы меняем межстрочный интервал на 1.6em,
+то есть он будет в 1,6 раза больше высоты шрифта//
+ }
+
+h1, h2 {
+ font-family: sans-serif;
+ color: black;
+ }
+h1 {
+ border-bottom: 0px solid black;
+ }
+ p {
+ color: maroon;
+ }
+
+
+.guarantee {
+ line-height: 1.9em;
+ font-style: italic;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ color: #4 44444;
+ border-color: black; //цвет границы//
+ border-width: 1px; //ширина границы//
+ border-style: solid; // сплошная граница//
+ background-color: #a7cece; //фоновый цвет//
+ padding: 25px; //отступ от содержимого//
+ padding-left: 150px; //отступ с левой стороны//
+ margin: 1px; //поля ширина//
+ margin-left: 250px;
+ 
+}
+
+#name {
+ border-width: thin;
+ //border-style: solid;
+ //border-color: #007e7e;
+ width: 300px;
+ padding-right: 0px;
+ padding-bottom: 100px;
+ padding-left: 0px;
+ margin-left: 400px;
+ text-align: center;
+}
+
+#pic {
+float: left;
+}
