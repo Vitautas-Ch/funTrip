@@ -354,6 +354,7 @@ template {
 body {
   font-style: normal;
   font-weight: 400;
+  line-height: 140%;
 }
 
 html {
@@ -376,54 +377,69 @@ a {
 }
 
 .container {
-  max-width: 1050px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-/* Header styles start */
-.header__inner {
+.home-page {
+  height: 100vh;
+  background-image: url(../images/backgrounds/home-page_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* Header styles start */
+  /* Header styles end */
+  /* Сity-cards styles start */
+  /* Сity-cards styles end */
+}
+.home-page .main {
+  height: calc(100% - 109px);
+}
+.home-page .container {
+  max-width: 1050px;
+}
+.home-page .header {
+  padding: 30px;
+}
+.home-page .header__inner {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline;
   justify-content: space-between;
 }
-.header .logo__img {
-  width: 250px;
-  height: 100px;
-  -o-object-position: top center;
-     object-position: top center;
-  -o-object-fit: cover;
-     object-fit: cover;
+.home-page .header .logo__text {
+  font-family: "Beer Money";
+  font-size: 32px;
+  line-height: 140%;
+  color: #ffffff;
+  text-shadow: 0 0 10px black, 2px 8px 6px black, 0px -5px 35px white;
+  margin: 0;
 }
-.header__title {
+.home-page .header__link .title {
   font-family: "Beer Money";
   font-size: 40px;
-  line-height: 49px;
-  text-align: center;
-  color: #000000;
+  line-height: 140%;
+  color: #ffffff;
+  text-shadow: 0 0 10px black, 2px 8px 6px black, 0px -5px 35px white;
   margin: 0;
-  padding: 30px 0;
 }
-/* Header styles end */
-/* Сity-cards styles start */
-.city-cards {
-  padding: 50px 0 95px;
-  background-color: #CDCDCD;
+.home-page .city-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.city-cards__items {
+.home-page .city-cards__items {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(3, 1fr);
-  grid-gap: 120px 70px;
-  padding-bottom: 90px;
+  justify-items: center;
 }
-.city-cards__items .item {
-  max-width: 240px;
-  max-height: 300px;
+.home-page .city-cards__items .item {
   padding: 25px 20px;
   background-color: #ffffff;
   box-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
-.city-cards__items .item__img {
+.home-page .city-cards__items .item__img {
   width: 200px;
   height: 200px;
   -o-object-position: top center;
@@ -431,51 +447,123 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.city-cards__items .item__title {
+.home-page .city-cards__items .item__title {
   font-family: "Beryozki";
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 48px;
+  line-height: 140%;
   text-align: center;
   color: #000000;
   margin: 0;
   padding: 10px 0 15px;
 }
-.city-cards__items .item:hover {
-  cursor: pointer;
-}
-.city-cards__items .item:hover img {
-  filter: grayscale(0.8);
-  transition: 0.5s all;
-}
-.city-cards .item:nth-child(1) {
-  transform: rotate(10deg);
-}
-.city-cards .item:nth-child(2) {
-  transform: rotate(-5deg);
-}
-.city-cards .item:nth-child(4) {
-  transform: rotate(-10deg);
-}
-.city-cards .item:nth-child(6) {
-  transform: rotate(10deg);
-}
 
-/* Сity-cards styles end */
-@media screen and (max-width: 1300px) {
-  .container {
-    max-width: 720px;
+@media screen and (min-width: 550px) {
+  .home-page .city-cards__items .item:nth-child(1) {
+    transform: rotate(10deg);
   }
-  .header .logo__img {
-    width: 150px;
-    height: 65px;
+  .home-page .city-cards__items .item:nth-child(2) {
+    transform: rotate(-5deg);
   }
-  .header__title {
+  .home-page .city-cards__items .item:nth-child(4) {
+    transform: rotate(-10deg);
+  }
+  .home-page .city-cards__items .item:nth-child(6) {
+    transform: rotate(10deg);
+  }
+  .home-page .city-cards__items .item:hover {
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+  }
+  .home-page .city-cards__items .item:nth-child(1):hover {
+    transform: scale(1.1, 1.1) translate(10%, 10%);
+  }
+  .home-page .city-cards__items .item:nth-child(2):hover {
+    transform: scale(1.1, 1.1) translate(0, 10%);
+  }
+  .home-page .city-cards__items .item:nth-child(3):hover {
+    transform: scale(1.1, 1.1) translate(-10%, 10%);
+  }
+  .home-page .city-cards__items .item:nth-child(4):hover {
+    transform: scale(1.1, 1.1) translate(10%, -10%);
+  }
+  .home-page .city-cards__items .item:nth-child(5):hover {
+    transform: scale(1.1, 1.1) translate(0, -10%);
+  }
+  .home-page .city-cards__items .item:nth-child(6):hover {
+    transform: scale(1.1, 1.1) translate(-10%, -10%);
+  }
+}
+@media screen and (max-width: 900px) {
+  .home-page .header__link .title {
     font-size: 30px;
-    line-height: 35px;
   }
-  .city-cards__items {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-    grid-gap: 80px 130px;
+  .home-page .city-cards__items .item {
+    padding: 20px 15px;
+  }
+  .home-page .city-cards__items .item__img {
+    width: 160px;
+    height: 160px;
+  }
+  .home-page .city-cards__items .item__title {
+    font-size: 40px;
+    padding: 5px 0 5px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home-page .header {
+    padding: 5px;
+  }
+  .home-page .header .logo__text {
+    font-size: 50px;
+  }
+  .home-page .header__link .title {
+    font-size: 35px;
+  }
+  .home-page .city-cards__items .item {
+    padding: 15px 10px;
+  }
+  .home-page .city-cards__items .item__img {
+    width: 140px;
+    height: 140px;
+  }
+  .home-page .city-cards__items .item__title {
+    font-size: 35px;
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home-page .container {
+    max-width: 320px;
+  }
+  .home-page .header {
+    padding: 5px;
+  }
+  .home-page .header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-page .header .logo__text {
+    font-size: 50px;
+  }
+  .home-page .header__link .title {
+    font-size: 20px;
+  }
+  .home-page .city-cards__items {
+    grid-template: repeat(1, 1fr)/repeat(6, 1fr);
+    grid-column-gap: 20px;
+    overflow: hidden;
+  }
+  .home-page .city-cards__items .item {
+    padding: 25px 20px;
+  }
+  .home-page .city-cards__items .item__img {
+    width: 220px;
+    height: 220px;
+  }
+  .home-page .city-cards__items .item__title {
+    font-size: 48px;
+    padding: 10px 0 15px;
   }
 }
 /* Get-in-touch styles start */
