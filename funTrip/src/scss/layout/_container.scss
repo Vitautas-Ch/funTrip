@@ -1,0 +1,29 @@
+.container {
+  max-width: 1050px;
+}
+
+@media screen and (max-width: 550px) {
+  .home-page {
+    .header {
+      .container {
+        max-width: 320px;
+      }
+    }
+  }
+
+  .home-page {
+    .container {
+      max-width: 320px;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  // .grodno-city {
+  //   section {
+  //     .container {
+  //       max-width: 900px;
+  //     }
+  //   }
+  // }
+}

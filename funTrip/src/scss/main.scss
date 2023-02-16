@@ -1,89 +1,20 @@
 @import 'base/normalize';
 @import 'base/typography';
+@import 'base/base';
 
-
-html {
-  box-sizing: border-box;
-  user-select: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.title {}
-
-.container {
-  margin: 0 auto;
-  padding: 0 10px;
-
-}
+@import 'layout/container';
+@import 'layout/header';
 
 .home-page {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../images/backgrounds/home-page_bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   .main {
-    height: calc(100% - 109px);
+    height: calc(100vh - 116px);
   }
-
-  .container {
-    max-width: 1050px;
-  }
-
-  /* Header styles start */
-  .header {
-    padding: 30px;
-
-    &__inner {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: space-between;
-    }
-
-    .logo {
-      &__text {
-        font-family: 'Beer Money';
-        font-size: 32px;
-        line-height: 140%;
-        color: #ffffff;
-        // color: #000000;
-        text-shadow: 0 0 10px black, 2px 8px 6px black, 0px -5px 35px white;
-        margin: 0;
-
-      }
-    }
-
-    &__link {
-      .title {
-        font-family: 'Beer Money';
-        font-size: 40px;
-        line-height: 140%;
-        color: #ffffff;
-        // color: #000000;
-        text-shadow: 0 0 10px black, 2px 8px 6px black, 0px -5px 35px white;
-        margin: 0;
-        // padding: 30px 0;
-      }
-    }
-
-    // &__btn {}
-  }
-
-  /* Header styles end */
 
   /* Сity-cards styles start */
   .city-cards {
@@ -186,22 +117,6 @@ a {
 
 @media screen and (max-width: 900px) {
   .home-page {
-    .container {
-      // max-width: 720px;
-    }
-
-    .header {
-
-      .logo {
-        &__text {}
-      }
-
-      &__link {
-        .title {
-          font-size: 30px;
-        }
-      }
-    }
 
     .city-cards {
       &__items {
@@ -225,21 +140,6 @@ a {
 
 @media screen and (max-width: 650px) {
   .home-page {
-    .header {
-      padding: 5px;
-
-      .logo {
-        &__text {
-          font-size: 50px;
-        }
-      }
-
-      &__link {
-        .title {
-          font-size: 35px;
-        }
-      }
-    }
 
     .city-cards {
       &__items {
@@ -263,30 +163,6 @@ a {
 
 @media screen and (max-width: 550px) {
   .home-page {
-    .container {
-      max-width: 320px;
-    }
-
-    .header {
-      padding: 5px;
-
-      &__inner {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .logo {
-        &__text {
-          font-size: 50px;
-        }
-      }
-
-      &__link {
-        .title {
-          font-size: 20px;
-        }
-      }
-    }
 
     .city-cards {
       &__items {
@@ -313,6 +189,206 @@ a {
 }
 
 
-/* Get-in-touch styles start */
+
+
+.grodno-city {
+  background-color: #DFBDA7;
+
+  /* Grodno styles start */
+  .grodno {
+    background-image: url(../images/backgrounds/grodno_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    &__title {
+      margin: 0;
+      font-family: 'Beer Money';
+      font-size: 150px;
+      line-height: 185px;
+      text-align: center;
+      color: #DFC4A7;
+      text-shadow: 2px 0 2px #000,
+        0 2px 2px #000,
+        -2px 0 2px #000,
+        0 -2px 2px #000;
+      padding: 40px 0 200px;
+      margin-bottom: 95px;
+    }
+  }
+
+  /* Grodno styles end */
+  /* Housing styles end */
+  .housing {
+    font-family: 'Helvetica';
+
+    &__inner {}
+
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__items {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    &__item {
+      max-width: 480px;
+
+      .item {
+        &__subtitle {
+          font-size: 30px;
+        }
+
+        &__desc {
+          font-size: 20px;
+          letter-spacing: 0.015em;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  /* Housing styles start */
+
+
+  /* Sightseeing styles start */
+  .sightseeing {
+    font-family: 'Helvetica';
+
+    &__inner {}
+
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__items {}
+
+    &__item {
+      .item {
+        &__subtitle {
+          font-size: 25px;
+        }
+
+        &__img {
+          object-position: top center;
+          object-fit: cover;
+        }
+
+        &__text {
+          font-size: 18px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  /* Sightseeing styles end */
+
+  /* Cafe styles start */
+  .cafe {
+    font-family: 'Helvetica';
+
+    &__inner {}
+
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__items {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    &__item {
+      .item {
+        &__img {
+          width: 425px;
+          height: 425px;
+          object-position: top center;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        &__subtitle {
+          font-size: 30px;
+        }
+
+        &__desc {
+          max-width: 565px;
+          font-size: 20px;
+          letter-spacing: 0.015em;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  /* Cafe styles end */
+
+  /* Bars styles start */
+  .bars {
+    font-family: 'Helvetica';
+
+    &__inner {}
+
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__items {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      justify-items: center;
+
+    }
+
+    &__item {
+      .item {
+        &__img {
+          width: 330px;
+          height: 525px;
+          object-position: top center;
+          object-fit: cover;
+          border-radius: 50px;
+        }
+
+        &__subtitle {
+          font-size: 30px;
+        }
+
+        &__desc {
+          max-width: 670px;
+          font-size: 20px;
+          letter-spacing: 0.015em;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  /* Bars styles end */
+}
+
+@media screen and (max-width: 1050px) {
+  .grodno-city {
+    .container {
+      max-width: 900px;
+    }
+  }
+
+  .sightseeing {
+    .item__img {
+      max-width: 880px;
+    }
+  }
+}
 
 /* Get-in-touch styles end */

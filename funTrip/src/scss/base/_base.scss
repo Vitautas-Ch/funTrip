@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// body {}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+// .title {}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
