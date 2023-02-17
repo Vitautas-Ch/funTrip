@@ -12,11 +12,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../fonts/Helvetica/Helvetica_regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  // font-family: ;
+  font-family: 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
-  //font-size: 18px;
+  font-size: 20px;
   line-height: 140%;
-  // color: #333333;
+  color: #333333;
 }
