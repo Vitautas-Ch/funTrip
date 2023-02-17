@@ -2,6 +2,8 @@
 @import 'base/typography';
 @import 'base/base';
 
+@import 'components/title-city__icon';
+
 @import 'layout/container';
 @import 'layout/header';
 
@@ -220,23 +222,18 @@
   /* Grodno styles end */
   /* Housing styles end */
   .housing {
-    font-family: 'Helvetica';
-
     &__inner {}
-
-    &__title {
-      font-size: 30px;
-      text-align: center;
-    }
 
     &__items {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-gap: 50px 180px;
       justify-items: center;
     }
 
     &__item {
-      max-width: 480px;
+      max-width: 520px;
+      min-height: 0;
 
       .item {
         &__subtitle {
@@ -247,6 +244,7 @@
           font-size: 20px;
           letter-spacing: 0.015em;
           text-align: justify;
+          user-select: text;
         }
       }
     }
@@ -257,21 +255,21 @@
 
   /* Sightseeing styles start */
   .sightseeing {
-    font-family: 'Helvetica';
+    margin-bottom: 75px;
 
     &__inner {}
-
-    &__title {
-      font-size: 30px;
-      text-align: center;
-    }
 
     &__items {}
 
     &__item {
+      margin-bottom: 40px;
+
       .item {
         &__subtitle {
+          margin-bottom: 10px;
           font-size: 25px;
+          text-align: center;
+
         }
 
         &__img {
@@ -282,6 +280,7 @@
         &__text {
           font-size: 18px;
           text-align: justify;
+          user-select: text;
         }
       }
     }
@@ -291,19 +290,16 @@
 
   /* Cafe styles start */
   .cafe {
-    font-family: 'Helvetica';
+    margin-bottom: 75px;
 
     &__inner {}
-
-    &__title {
-      font-size: 30px;
-      text-align: center;
-    }
 
     &__items {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-gap: 60px 100px;
       justify-items: center;
+      align-items: center;
     }
 
     &__item {
@@ -317,6 +313,8 @@
         }
 
         &__subtitle {
+          margin: 0;
+          margin-bottom: 16px;
           font-size: 30px;
         }
 
@@ -325,6 +323,7 @@
           font-size: 20px;
           letter-spacing: 0.015em;
           text-align: justify;
+          user-select: text;
         }
       }
     }
@@ -334,20 +333,14 @@
 
   /* Bars styles start */
   .bars {
-    font-family: 'Helvetica';
-
     &__inner {}
-
-    &__title {
-      font-size: 30px;
-      text-align: center;
-    }
 
     &__items {
       display: grid;
       grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-gap: 75px 130px;
       justify-items: center;
-
+      align-items: center;
     }
 
     &__item {
@@ -361,6 +354,8 @@
         }
 
         &__subtitle {
+          margin: 0;
+          margin-bottom: 16px;
           font-size: 30px;
         }
 
@@ -369,6 +364,7 @@
           font-size: 20px;
           letter-spacing: 0.015em;
           text-align: justify;
+          user-select: text;
         }
       }
     }
@@ -378,11 +374,6 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .grodno-city {
-    .container {
-      max-width: 900px;
-    }
-  }
 
   .sightseeing {
     .item__img {

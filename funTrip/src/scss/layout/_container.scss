@@ -1,16 +1,11 @@
-.container {
-  max-width: 1050px;
+.header {
+  .container {
+    max-width: 1050px;
+  }
 }
 
-@media screen and (max-width: 550px) {
-  .home-page {
-    .header {
-      .container {
-        max-width: 320px;
-      }
-    }
-  }
 
+@media screen and (max-width: 550px) {
   .home-page {
     .container {
       max-width: 320px;
@@ -18,12 +13,35 @@
   }
 }
 
-@media screen and (max-width: 1030px) {
-  // .grodno-city {
-  //   section {
-  //     .container {
-  //       max-width: 900px;
-  //     }
-  //   }
-  // }
+.grodno-city {
+  .container {
+    max-width: 1050px;
+  }
+
+  .housing {
+    .container {
+      max-width: 1260px;
+    }
+  }
+
+  .cafe {
+    .container {
+      max-width: 1260px;
+    }
+  }
+
+  .bars {
+    .container {
+      max-width: 1260px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .grodno-city {
+    .container {
+      max-width: 900px;
+    }
+  }
 }
