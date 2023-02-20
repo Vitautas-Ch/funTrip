@@ -372,6 +372,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -455,8 +456,17 @@ ul {
     max-width: 900px;
   }
 }
+.about-project .container {
+  max-width: 1050px;
+}
+
+.resume .container {
+  max-width: 1140px;
+}
+
 /* Header styles start */
 .header {
+  background: transparent;
   padding: 30px;
 }
 .header__inner {
@@ -515,6 +525,8 @@ ul {
   }
 }
 .home-page {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-image: url(../images/backgrounds/home-page_bg.jpg);
   background-repeat: no-repeat;
@@ -524,13 +536,14 @@ ul {
   /* Сity-cards styles end */
 }
 .home-page .main {
-  height: calc(100vh - 116px);
-}
-.home-page .city-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-grow: 1;
+}
+.home-page .city-cards {
+  display: flex;
+  padding-bottom: 30px;
 }
 .home-page .city-cards__items {
   display: grid;
@@ -766,7 +779,7 @@ ul {
      object-position: top center;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50px;
+  border-radius: 50px 0 50px 0;
 }
 .grodno-city .bars__item .item__subtitle {
   margin: 0;
@@ -789,4 +802,117 @@ ul {
     max-width: 880px;
   }
 }
-/* Get-in-touch styles end *//*# sourceMappingURL=main.css.map */
+/* Get-in-touch styles end */
+.about-project {
+  min-height: 100vh;
+  background-image: url(../images/backgrounds/about-project_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about-project .main {
+  color: ghostwhite;
+  text-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  /* Our-team styles start */
+  /* Our-team styles end */
+  /* Resume styles start */
+}
+.about-project .main .about__title {
+  font-family: "Beer Money";
+  text-align: center;
+}
+.about-project .main .about .beer-font {
+  font-family: "Beer Money";
+}
+.about-project .main .our-team {
+  padding: 80px 0 90px;
+}
+.about-project .main .our-team__title {
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  margin-bottom: 43px;
+  position: relative;
+}
+.about-project .main .our-team__title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.about-project .main .our-team__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-project .main .our-team__items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-project .main .our-team__items .item__img {
+  width: 220px;
+  height: 220px;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
+}
+.about-project .main .our-team__items .item__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0 6px;
+}
+.about-project .main .our-team__items .item__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 18px;
+}
+.about-project .main .our-team__items .item:hover img {
+  filter: grayscale(0);
+  transition: 0.5s all;
+}
+.about-project .main .resume h2 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+.about-project .main .resume h5 {
+  margin: 0;
+}
+.about-project .main .resume p {
+  margin: 8px 0;
+}
+.about-project .main .resume .item {
+  margin-bottom: 90px;
+}
+.about-project .main .resume .greeting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-project .main .resume .contacts {
+  white-space: nowrap;
+}
+.about-project .main .resume .avatar {
+  max-width: 250px;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Resume styles end *//*# sourceMappingURL=main.css.map */
