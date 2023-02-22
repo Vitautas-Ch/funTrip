@@ -1,0 +1,144 @@
+.about-project {
+  // display: flex;
+  // flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../images/backgrounds/about-project_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .main {
+    color: ghostwhite;
+    text-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+
+    .about {
+      &__inner {}
+
+      &__title {
+        font-family: 'Beer Money';
+        text-align: center;
+      }
+
+      .beer-font {
+        font-family: 'Beer Money';
+
+      }
+    }
+
+
+
+    /* Our-team styles start */
+    .our-team {
+      padding: 80px 0 90px;
+
+      &__title {
+        font-size: 23px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+        margin-bottom: 43px;
+        position: relative;
+      }
+
+      &__title::after {
+        content: '';
+        width: 80px;
+        height: 2px;
+        background: black;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+
+      &__inner {}
+
+      &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__img {
+            width: 220px;
+            height: 220px;
+            object-position: top center;
+            object-fit: cover;
+            filter: grayscale(1);
+          }
+
+          &__title {
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 20px 0 6px;
+          }
+
+          &__subtitle {
+            // font-family: 'Vollkorn', serif;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            padding-bottom: 18px;
+          }
+        }
+
+        .item:hover img {
+          filter: grayscale(0);
+          transition: .5s all;
+        }
+      }
+    }
+
+    /* Our-team styles end */
+    /* Resume styles start */
+
+    .resume {
+      h2 {
+        font-size: 17px;
+        margin: 10px 0;
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      p {
+        margin: 8px 0;
+      }
+
+      .item {
+        margin-bottom: 90px;
+      }
+
+      .greeting {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .contacts {
+        white-space: nowrap;
+      }
+
+      .avatar {
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* Resume styles end */

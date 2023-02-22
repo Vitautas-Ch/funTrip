@@ -429,6 +429,224 @@ ul {
   background: #000;
 }
 
+.city {
+  background-color: #DFBDA7;
+}
+.city .city-styles {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  max-height: 530px;
+  margin-bottom: 95px;
+}
+.city .city-styles__title {
+  margin: 0;
+  font-family: "Beer Money";
+  font-size: 150px;
+  line-height: 185px;
+  text-align: center;
+  color: #DFC4A7;
+  text-shadow: 2px 0 2px #000, 0 2px 2px #000, -2px 0 2px #000, 0 -2px 2px #000;
+  padding: 40px 0 200px;
+}
+
+/* Grodno styles start */
+.city .grodno {
+  background-image: url(../images/backgrounds/grodno_bg.jpg);
+}
+
+/* Grodno styles end */
+/* Brest styles start */
+.city .brest {
+  background-image: url(../images/backgrounds/brest_bg.jpg);
+}
+
+/* Brest styles end */
+/* Minsk styles start */
+.city .minsk {
+  background-image: url(../images/backgrounds/minsk_bg.jpg);
+}
+
+/* Minsk styles end */
+/* Mogilev styles start */
+.city .mogilev {
+  background-image: url(../images/backgrounds/mogilev_bg.jpg);
+}
+
+/* Mogilev styles end */
+/* Mogilev styles start */
+.city .mogilev {
+  background-image: url(../images/backgrounds/mogilev_bg.jpg);
+}
+
+/* Mogilev styles end */
+/* Mogilev styles start */
+.city .mogilev {
+  background-image: url(../images/backgrounds/mogilev_bg.jpg);
+}
+
+/* Mogilev styles end */
+/* Housing styles start*/
+.housing__items {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-gap: 50px 180px;
+  justify-items: center;
+}
+.housing__item {
+  max-width: 520px;
+  min-height: 0;
+}
+.housing__item .item__subtitle {
+  font-size: 30px;
+}
+.housing__item .item__desc {
+  font-size: 20px;
+  letter-spacing: 0.015em;
+  text-align: justify;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+/* Housing styles end */
+/* Sightseeing styles start */
+.sightseeing {
+  margin-bottom: 75px;
+}
+.sightseeing__item {
+  margin-bottom: 40px;
+}
+.sightseeing__item .item__subtitle {
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.sightseeing__item .item__img {
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sightseeing__item .item__text {
+  font-size: 18px;
+  text-align: justify;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+/* Sightseeing styles end */
+@media screen and (max-width: 1050px) {
+  .sightseeing .item__img {
+    max-width: 880px;
+  }
+}
+/* Cafe styles start */
+.cafe {
+  margin-bottom: 75px;
+}
+.cafe__items {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-gap: 60px 100px;
+  justify-items: center;
+  align-items: center;
+}
+.cafe__item .item__img {
+  width: 425px;
+  height: 425px;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.cafe__item .item__subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+.cafe__item .item__desc {
+  max-width: 565px;
+  font-size: 20px;
+  letter-spacing: 0.015em;
+  text-align: justify;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+/* Cafe styles end */
+/* Bars styles start */
+.bars__items {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-gap: 75px 130px;
+  justify-items: center;
+  align-items: center;
+}
+.bars__item .item__img {
+  width: 330px;
+  height: 525px;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px 0 50px 0;
+}
+.bars__item .item__subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+.bars__item .item__desc {
+  max-width: 670px;
+  font-size: 20px;
+  letter-spacing: 0.015em;
+  text-align: justify;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+/* Bars styles end */
+/* Curiosity styles start */
+.curiosity__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+}
+.curiosity__items .item {
+  position: relative;
+}
+.curiosity__items .item__img {
+  width: 265px;
+  height: 350px;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.curiosity__items .item__title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Beer Money";
+  font-size: 30px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Curiosity styles end */
 .header .container {
   max-width: 1050px;
 }
@@ -438,21 +656,21 @@ ul {
     max-width: 320px;
   }
 }
-.grodno-city .container {
+.city .container {
   max-width: 1050px;
 }
-.grodno-city .housing .container {
+.city .housing .container {
   max-width: 1260px;
 }
-.grodno-city .cafe .container {
+.city .cafe .container {
   max-width: 1260px;
 }
-.grodno-city .bars .container {
+.city .bars .container {
   max-width: 1260px;
 }
 
 @media screen and (max-width: 1050px) {
-  .grodno-city .container {
+  .city .container {
     max-width: 900px;
   }
 }
@@ -654,155 +872,6 @@ ul {
     padding: 10px 0 15px;
   }
 }
-.grodno-city {
-  background-color: #DFBDA7;
-  /* Grodno styles start */
-  /* Grodno styles end */
-  /* Housing styles end */
-  /* Housing styles start */
-  /* Sightseeing styles start */
-  /* Sightseeing styles end */
-  /* Cafe styles start */
-  /* Cafe styles end */
-  /* Bars styles start */
-  /* Bars styles end */
-}
-.grodno-city .grodno {
-  background-image: url(../images/backgrounds/grodno_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-.grodno-city .grodno__title {
-  margin: 0;
-  font-family: "Beer Money";
-  font-size: 150px;
-  line-height: 185px;
-  text-align: center;
-  color: #DFC4A7;
-  text-shadow: 2px 0 2px #000, 0 2px 2px #000, -2px 0 2px #000, 0 -2px 2px #000;
-  padding: 40px 0 200px;
-  margin-bottom: 95px;
-}
-.grodno-city .housing__items {
-  display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-gap: 50px 180px;
-  justify-items: center;
-}
-.grodno-city .housing__item {
-  max-width: 520px;
-  min-height: 0;
-}
-.grodno-city .housing__item .item__subtitle {
-  font-size: 30px;
-}
-.grodno-city .housing__item .item__desc {
-  font-size: 20px;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
-}
-.grodno-city .sightseeing {
-  margin-bottom: 75px;
-}
-.grodno-city .sightseeing__item {
-  margin-bottom: 40px;
-}
-.grodno-city .sightseeing__item .item__subtitle {
-  margin-bottom: 10px;
-  font-size: 25px;
-  text-align: center;
-}
-.grodno-city .sightseeing__item .item__img {
-  -o-object-position: top center;
-     object-position: top center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.grodno-city .sightseeing__item .item__text {
-  font-size: 18px;
-  text-align: justify;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
-}
-.grodno-city .cafe {
-  margin-bottom: 75px;
-}
-.grodno-city .cafe__items {
-  display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-gap: 60px 100px;
-  justify-items: center;
-  align-items: center;
-}
-.grodno-city .cafe__item .item__img {
-  width: 425px;
-  height: 425px;
-  -o-object-position: top center;
-     object-position: top center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-.grodno-city .cafe__item .item__subtitle {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 30px;
-}
-.grodno-city .cafe__item .item__desc {
-  max-width: 565px;
-  font-size: 20px;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
-}
-.grodno-city .bars__items {
-  display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-gap: 75px 130px;
-  justify-items: center;
-  align-items: center;
-}
-.grodno-city .bars__item .item__img {
-  width: 330px;
-  height: 525px;
-  -o-object-position: top center;
-     object-position: top center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50px 0 50px 0;
-}
-.grodno-city .bars__item .item__subtitle {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 30px;
-}
-.grodno-city .bars__item .item__desc {
-  max-width: 670px;
-  font-size: 20px;
-  letter-spacing: 0.015em;
-  text-align: justify;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
-}
-
-@media screen and (max-width: 1050px) {
-  .sightseeing .item__img {
-    max-width: 880px;
-  }
-}
-/* Get-in-touch styles end */
 .about-project {
   min-height: 100vh;
   background-image: url(../images/backgrounds/about-project_bg.jpg);

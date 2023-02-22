@@ -1,0 +1,38 @@
+/* Curiosity styles start */
+.curiosity {
+  &__inner {}
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+
+    .item {
+      position: relative;
+
+      &__img {
+        width: 265px;
+        height: 350px;
+        object-position: top center;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      &__title {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: 'Beer Money';
+        font-size: 30px;
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+
+      }
+    }
+  }
+}
+
+/* Curiosity styles end */

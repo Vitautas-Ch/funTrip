@@ -1,0 +1,42 @@
+/* Sightseeing styles start */
+.sightseeing {
+  margin-bottom: 75px;
+
+  &__inner {}
+
+  &__items {}
+
+  &__item {
+    margin-bottom: 40px;
+
+    .item {
+      &__subtitle {
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: center;
+
+      }
+
+      &__img {
+        object-position: top center;
+        object-fit: cover;
+      }
+
+      &__text {
+        font-size: 18px;
+        text-align: justify;
+        user-select: text;
+      }
+    }
+  }
+}
+
+/* Sightseeing styles end */
+@media screen and (max-width: 1050px) {
+
+  .sightseeing {
+    .item__img {
+      max-width: 880px;
+    }
+  }
+}
