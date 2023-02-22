@@ -1,0 +1,80 @@
+.city {
+  background-color: #DFBDA7;
+
+  .city-styles {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    max-height: 530px;
+    margin-bottom: 95px;
+
+    &__title {
+      margin: 0;
+      font-family: 'Beer Money';
+      font-size: 150px;
+      line-height: 185px;
+      text-align: center;
+      color: #DFC4A7;
+      text-shadow: 2px 0 2px #000,
+        0 2px 2px #000,
+        -2px 0 2px #000,
+        0 -2px 2px #000;
+      padding: 40px 0 200px;
+
+    }
+  }
+}
+
+/* Grodno styles start */
+.city {
+  .grodno {
+    background-image: url(../images/backgrounds/grodno_bg.jpg);
+  }
+}
+
+/* Grodno styles end */
+
+/* Brest styles start */
+.city {
+  .brest {
+    background-image: url(../images/backgrounds/brest_bg.jpg);
+  }
+}
+
+/* Brest styles end */
+
+/* Minsk styles start */
+.city {
+  .minsk {
+    background-image: url(../images/backgrounds/minsk_bg.jpg);
+  }
+}
+
+/* Minsk styles end */
+
+/* Mogilev styles start */
+.city {
+  .mogilev {
+    background-image: url(../images/backgrounds/mogilev_bg.jpg);
+  }
+}
+
+/* Mogilev styles end */
+
+/* Mogilev styles start */
+.city {
+  .mogilev {
+    background-image: url(../images/backgrounds/mogilev_bg.jpg);
+  }
+}
+
+/* Mogilev styles end */
+
+/* Mogilev styles start */
+.city {
+  .mogilev {
+    background-image: url(../images/backgrounds/mogilev_bg.jpg);
+  }
+}
+
+/* Mogilev styles end */

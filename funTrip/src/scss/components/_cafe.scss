@@ -1,0 +1,42 @@
+/* Cafe styles start */
+.cafe {
+  margin-bottom: 75px;
+
+  &__inner {}
+
+  &__items {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 60px 100px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__item {
+    .item {
+      &__img {
+        width: 425px;
+        height: 425px;
+        object-position: top center;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      &__subtitle {
+        margin: 0;
+        margin-bottom: 16px;
+        font-size: 30px;
+      }
+
+      &__desc {
+        max-width: 565px;
+        font-size: 20px;
+        letter-spacing: 0.015em;
+        text-align: justify;
+        user-select: text;
+      }
+    }
+  }
+}
+
+/* Cafe styles end */

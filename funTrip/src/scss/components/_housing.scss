@@ -1,0 +1,31 @@
+/* Housing styles start*/
+.housing {
+  &__inner {}
+
+  &__items {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 50px 180px;
+    justify-items: center;
+  }
+
+  &__item {
+    max-width: 520px;
+    min-height: 0;
+
+    .item {
+      &__subtitle {
+        font-size: 30px;
+      }
+
+      &__desc {
+        font-size: 20px;
+        letter-spacing: 0.015em;
+        text-align: justify;
+        user-select: text;
+      }
+    }
+  }
+}
+
+/* Housing styles end */
