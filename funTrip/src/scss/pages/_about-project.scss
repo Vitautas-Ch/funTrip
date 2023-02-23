@@ -123,8 +123,10 @@
       .greeting {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
       }
 
       .contacts {
@@ -132,6 +134,8 @@
       }
 
       .avatar {
+        // margin-right: 25px;
+        flex-grow: 1;
         max-width: 250px;
         max-height: 250px;
         object-fit: cover;
