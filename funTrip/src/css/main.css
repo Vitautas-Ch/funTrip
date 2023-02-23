@@ -474,18 +474,18 @@ ul {
 }
 
 /* Mogilev styles end */
-/* Mogilev styles start */
-.city .mogilev {
-  background-image: url(../images/backgrounds/mogilev_bg.jpg);
+/* Vitebsk styles start */
+.city .vitebsk {
+  background-image: url(../images/backgrounds/vitebsk_bg.jpg);
 }
 
-/* Mogilev styles end */
-/* Mogilev styles start */
-.city .mogilev {
-  background-image: url(../images/backgrounds/mogilev_bg.jpg);
+/* Vitebsk styles end */
+/* Gomel styles start */
+.city .gomel {
+  background-image: url(../images/backgrounds/gomel_bg.jpg);
 }
 
-/* Mogilev styles end */
+/* Gomel styles end */
 /* Housing styles start*/
 .housing__items {
   display: grid;
@@ -616,6 +616,9 @@ ul {
 
 /* Bars styles end */
 /* Curiosity styles start */
+.curiosity {
+  display: none;
+}
 .curiosity__items {
   display: flex;
   align-items: center;
@@ -970,13 +973,15 @@ ul {
 .about-project .main .resume .greeting {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
 }
 .about-project .main .resume .contacts {
   white-space: nowrap;
 }
 .about-project .main .resume .avatar {
+  flex-grow: 1;
   max-width: 250px;
   max-height: 250px;
   -o-object-fit: cover;
