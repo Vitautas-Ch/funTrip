@@ -272,6 +272,15 @@ ServiceFabricBackup/
 *.ldf
 *.ndf
 
+!funTrip/draft/test.txt
+
+# игнорируем весь каталог
+/funTrip/draft/ 
+# кроме одного файла
+!/funTrip/draft/test.txt
+
+
+
 # Business Intelligence projects
 *.rdl.data
 *.bim.layout
