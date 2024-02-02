@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ORM
 {
-    public class TypePlace
+    public class TypePlace : IOrm
     {
         public long Id { get; set; }
 

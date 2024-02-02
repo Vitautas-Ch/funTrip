@@ -272,14 +272,8 @@ ServiceFabricBackup/
 *.ldf
 *.ndf
 
-!funTrip/draft/test.txt
-
-# игнорируем весь каталог
-/funTrip/draft/ 
-# кроме одного файла
-!/funTrip/draft/test.txt
-
-
+!backend/FunTripApi/App_Data/FunTripDb.mdf
+!backend/FunTripApi/App_Data/FunTripDb_log.ldf
 
 # Business Intelligence projects
 *.rdl.data
