@@ -61,10 +61,11 @@ color: #000;
 
 .form-container{
     display: flex;
-    margin: 120px;
+    margin: 120px auto;
  
 }
 .form-container_1{
+    margin: 0 auto;
     width: 528px;
     height: 226px;
 }
@@ -92,6 +93,7 @@ color: #505050;
 }
 
 .form-container_2{
+    margin: 0 auto;
     width: 528px;
     height: 226px;
 }
