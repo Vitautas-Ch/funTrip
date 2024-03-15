@@ -5,11 +5,15 @@ import { Region } from './region';
   providedIn: 'root'
 })
 export class FunTripService {
-  url = 'http://localhost:4200/region';
+  host = 'http://localhost:4200';
+
+  regionUrl = '/api/Region/region';
+  
   constructor() { }
 
   async getRegions(): Promise<Region[]> {
-    const data = await fetch(this.url);
+    const url = this.host + this.regionUrl;
+    const data = await fetch(url);
     return await data.json() ?? [];
   }
 }

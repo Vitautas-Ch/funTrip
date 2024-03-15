@@ -1,5 +1,5 @@
 {
-    "/region": {
+    "/api": {
       "target": "http://localhost:5025",
       "secure": false
     }
