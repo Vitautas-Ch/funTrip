@@ -16,7 +16,7 @@ namespace DataAccessLayer.Interface
         ICityRepository CityRepository { get; }
         IGenericRepository<ImageCity> ImageCityRepository { get; }
 
-        IGenericRepository<Place> PlaceRepository { get; }
+        IPlaceRepository PlaceRepository { get; }
         IGenericRepository<ImagePlace> ImagePlaceRepository { get; }
         IGenericRepository<TypePlace> TypePlaceRepository { get; }
 

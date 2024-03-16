@@ -17,14 +17,14 @@ namespace FunTripApi.Controllers
         }
 
         [HttpGet]
-        [Route("/city")]
+        [Route("city")]
         public IEnumerable<City> GetCities()
         {
             return _unitOfWork.CityRepository.Get();
         }
 
         [HttpGet]
-        [Route("/city-name")]
+        [Route("city-name")]
         public IEnumerable<City> FilterCitiesByName(string name)
         {
             IEnumerable<City> filteredCities = _unitOfWork.CityRepository.FilterCitiesByName((city) =>

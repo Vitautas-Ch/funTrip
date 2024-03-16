@@ -26,7 +26,7 @@ namespace DataAccessLayer
         private ICityRepository? cityRepository;
         private IGenericRepository<ImageCity>? imageCityRepository;
 
-        private IGenericRepository<Place>? placeRepository;
+        private IPlaceRepository? placeRepository;
         private IGenericRepository<ImagePlace>? imagePlaceRepository;
         private IGenericRepository<TypePlace>? typePlaceRepository;
 
@@ -62,11 +62,11 @@ namespace DataAccessLayer
                 return imageCityRepository;
             }
         }
-        public IGenericRepository<Place> PlaceRepository
+        public IPlaceRepository PlaceRepository
         {
             get
             {
-                placeRepository ??= new GenericRepository<Place>(_context);
+                placeRepository ??= new PlaceRepository(_context);
                 return placeRepository;
             }
         }

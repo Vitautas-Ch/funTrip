@@ -10,6 +10,10 @@ namespace DataAccessLayer.Interface.Repository
 {
     public interface IPlaceRepository : IGenericRepository<Place>
     {
-        IEnumerable<Place> FilterPlacesByCity(Func<Place, bool> predicate, bool includeCities = false);
+        IEnumerable<Place> FilterPlacesByCity(Func<Place, bool> predicate,
+            bool includeCities = false,
+            bool includeTypePlace = false,
+            bool includeImagePlaces = false);
+
     }
 }
