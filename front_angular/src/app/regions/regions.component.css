@@ -1,0 +1,251 @@
+/* :root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Roboto Condensed", sans-serif;
+    --font3: "Montserrat Alternates", sans-serif;
+    --font4: "Helvetica", sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eeeeea;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 730px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width: 150px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-sizing: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 830px;
+}
+
+input:checked + label .description{
+    opacity: 0 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"]{
+    background-image: url("../foto/StartScreen/Brest.jpg");
+}
+.card[for="c2"]{
+    background-image: url("../foto/StartScreen/Grodno.png");
+}
+.card[for="c3"]{
+    background-image: url('../foto/StartScreen/Gomel.png');
+}
+.card[for="c4"]{
+    background-image: url('../foto/StartScreen/Mogilev.png');
+}
+.card[for="c5"]{
+    background-image: url('../foto/StartScreen/Vitebsk.png');
+}
+.card[for="c6"]{
+    background-image: url('../foto/StartScreen/Minsk.png');
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: 0.5s;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before{
+    content: "";
+    background-image: url("/foto/StartScreen/Grodno.png");
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.65);
+    z-index: -1;
+}
+
+main{
+    width: 1680px;
+    height: 730px;
+    display: flex;
+    gap: 15px;
+}
+
+.card{
+    width: 16%;
+   border-radius: 50px;
+   cursor: pointer; 
+   overflow: hidden;
+}
+
+.card:hover{
+    width: 80%;
+}
+
+.card.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .image{
+    transition: scale(1.2);
+}
+
+.card .background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    filter: brightness(0.25);
+    opacity: 0;
+}
+
+.card:hover .background{
+    opacity: 1;
+}
+
+.card .layer{
+    width: 100%;
+    height: 70%;
+    margin-top: -519px;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.5), transparent);
+}
+
+.card .layer .info h1{
+    width: 270px;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 60px;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+.card .layer .info p{
+    opacity: 0;
+}
+
+.card:hover .layer .info p{
+    opacity: 1;
+}
+
+.info p{
+    width: 700px;
+    height: 300px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 5px auto;
+}
+
+h1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    color: #fff;
+}
+
+p{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 25px;
+line-height: 115%;
+color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Roboto Condensed", sans-serif;
+    --font3: "Montserrat Alternates", sans-serif;
+    --font4: "Helvetica", sans-serif;
+  }
