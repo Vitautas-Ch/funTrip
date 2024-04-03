@@ -401,6 +401,34 @@
     letter-spacing: 1.25px;
     text-align: justify;
   }
+  .logo{
+    margin: 40px auto;
+    width: 150px;
+    height: 85px;
+    position: sticky;
+    z-index: 100;
+}
+
+.homePage{
+    font-family: var(--third-family);
+font-weight: 700;
+font-size: 48px;
+line-height: 115%;
+letter-spacing: 0.01em;
+color: #000;
+text-decoration:none;
+}
+
+.project-info{
+    margin: 0 22px;
+    font-family: var(--font3);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 115%;
+    text-align: center;
+    color: #000;
+    text-decoration:none;
+}
   .rect {
     background-color: rgba(226, 141, 218, 1);
     bottom: 0px;
